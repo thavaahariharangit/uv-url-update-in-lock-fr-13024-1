@@ -5,7 +5,7 @@ description = ""
 authors = [{name = "Thavaa Hariharan", email = "thavaahariharan@github.com"}]
 requires-python = ">=3.8"
 dependencies = [
-    "requests==2.32.2",
+    "requests==2.32.3",
 ]
 
 [[tool.uv.index]]
