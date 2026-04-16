@@ -1,0 +1,18 @@
+[project]
+name = "dependabot-jfrog-test"
+version = "0.1.0"
+description = ""
+authors = [{name = "Thavaa Hariharan", email = "thavaahariharan@github.com"}]
+requires-python = ">=3.8"
+dependencies = [
+    "requests==2.32.2",
+]
+
+[[tool.uv.index]]
+name = "jfrog"
+url = "https://jfrogghdemo.jfrog.io/artifactory/api/pypi/db-dependbot-python/simple/"
+default = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
