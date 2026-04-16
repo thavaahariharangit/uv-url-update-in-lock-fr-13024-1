@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: "uv"
+    versioning-strategy: "increase"
+    insecure-external-code-execution: allow
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    registries:
+      - python-artifactory
+
+registries:
+  python-artifactory:
+      type: "python-index"
+      url: "https://jfrogghdemo.jfrog.io/artifactory/api/pypi/db-dependbot-python/simple/"
+      username: "${{ secrets.JFROG_USERNAME }}"
+      password: "${{ secrets.JFROG_TOKEN }}"
+      replaces-base: true
